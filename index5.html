@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha256-tHoAPGoNdhIR28YHl9DWLzeRfdwigkH7OCBXMrHXhoM=" crossorigin="anonymous"></script>
+    <title>Choropleth Map of education in USA</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <a href="index.html"><i class="icon-reply"></i></a>
+    <div id="chloro">
+    <h2 id='titlechloro'>US Education Mapping</h2>
+    <div id='container'>
+        <svg id='canvaschloro'>
+            
+        </svg>
+        <div id='rightchloro'>
+            <div id='tooltipchloro'>
+
+            </div>
+            <svg id='legendchloro'>
+                <g>
+                    <rect x="10" y="0" width="40" height="40" fill="tomato"></rect>
+                    <text x="60" y="20" fill="rgb(56, 58, 74)">Less than 15%</text>
+                </g>
+                <g>
+                    <rect x="10" y="40" width="40" height="40" fill="orange"></rect>
+                    <text x="60" y="60" fill="rgb(56, 58, 74)">15% than 30%</text>
+                </g>
+                <g>
+                    <rect x="10" y="80" width="40" height="40" fill="lightgreen"></rect>
+                    <text x="60" y="100" fill="rgb(56, 58, 74)">30% to 45%</text>
+                </g>
+                <g>
+                    <rect x="10" y="120" width="40" height="40" fill="limegreen"></rect>
+                    <text x="60" y="140" fill="rgb(56, 58, 74)">More than 45%</text>
+                </g>
+            </svg>
+            <div id='descriptionchloro'>Percentage of adults with bachelor certificate Source: <a href='https://www.ers.usda.gov/data-products/county-level-data-sets/download-data.aspx'>USDA Economic Research Service</a></div>
+
+        </div>
+        
+    </div>
+    </div>
+    <h1 class="my-font"  style="color:#163D57;font-size: 1.1rem; margin-left:10rem; margin-right:10rem;margin-bottom:10rem;">In this data visualisation, we visualise chloropleth map. The map gives the information about the completion of bachelor by the US adult accoring to county data. To draw the county of US we use topo json, where the longitude and latitude of different counties were used to create a path eventually drawing the counties. Later the counties information was mapped with the education data to form the final diagram. </h1>
+</body>
+<script defer src='script.js'></script>
+
+</html>

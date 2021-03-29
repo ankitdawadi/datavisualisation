@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha256-tHoAPGoNdhIR28YHl9DWLzeRfdwigkH7OCBXMrHXhoM=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <title>Highest grossing movies</title>
+</head>
+<body>
+    <a href="index.html"><i class="icon-reply"></i></a>
+    <div id="tree">
+    <h2 id='titletree'>Highest grossing movies</h2>
+
+    <div id='container'> 
+        <svg id='canvastree'>
+
+        </svg>
+        <div id='rightSidetree'>
+            <div id='tooltiptree'>
+
+            </div>
+            <svg id='legendtree'>
+                <g>
+                    <rect class="legendtree-item" x="10" y="0" width="40" height="40" fill="#737CA1"></rect>
+                    <text x="60" y="20" fill="rgb(56, 58, 74)">Action</text>
+                </g>
+                <g>
+                    <rect class="legendtree-item" x="10" y="40" width="40" height="40" fill="#00FFFF"></rect>
+                    <text x="60" y="60" fill="rgb(56, 58, 74)">Drama</text>
+                </g>
+                <g>
+                    <rect class="legendtree-item" x="10" y="80" width="40" height="40" fill="#41A317"></rect>
+                    <text x="60" y="100" fill="rgb(56, 58, 74)">Adventure</text>
+                </g>
+                <g>
+                    <rect class="legendtree-item" x="10" y="120" width="40" height="40" fill="#FFF380"></rect>
+                    <text x="60" y="140" fill="rgb(56, 58, 74)">Family</text>
+                </g>
+                <g>
+                    <rect class="legendtree-item" x="10" y="160" width="40" height="40" fill="#FFEBCD"></rect>
+                    <text x="60" y="180" fill="rgb(56, 58, 74)">Animation</text>
+                </g>
+                <g>
+                    <rect class="legendtree-item" x="10" y="200" width="40" height="40" fill="khaki"></rect>
+                    <text x="60" y="220" fill="rgb(56, 58, 74)">Comedy</text>
+                </g>
+                <g>
+                    <rect class="legendtree-item" x="10" y="240" width="40" height="40" fill="tan"></rect>
+                    <text x="60" y="260" fill="rgb(56, 58, 74)">Biography</text>
+                </g> 
+            </svg>
+           
+        </div>
+        </div>
+        </div>
+
+        <h1 class="my-font" style="color:#163D57;font-size: 1.1rem; margin-left:10rem; margin-right:10rem;margin-bottom:10rem;">In this data visualisation,we visualise the tree structure data. The dataset contains the parent and children, parent being the total hihgest grossing movies, whose children are movies sorted by category and whose children are movie names. The categories are separated by color and eventually whole movies are separated. Recurisve function is used to sum the values and according to the values svg rectangles are drawn.</h1>
+</body>
+<script defer src='script.js'></script>
+
+</html>

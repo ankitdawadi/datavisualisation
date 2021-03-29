@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <title>Heat Map</title>
+</head>
+<body>
+    <a href="index.html"><i class="icon-reply"></i></a>
+    <div id="heat">
+    <h1 id='titleheat'>Monthly Global Land-Surface Temperature</h1>
+    <h4 id='descriptionheat'>Temperatures from 1753 - 2015 . Average is 8.66℃</h4>
+    <div id='tooltipheat'>
+
+    </div>
+    <svg id='canvasheat'>
+        
+    </svg>
+    <svg id='legendheat'>
+        <g>
+            <rect x="10" y="0" width="40" height="40" fill="SteelBlue"></rect>
+            <text x="60" y="20" fill="black">Variance of -1 or less</text>
+        </g>
+        <g>
+            <rect x="10" y="40" width="40" height="40" fill="LightSteelBlue"></rect>
+            <text x="60" y="60" fill="black">On or Below Average</text>
+        </g>
+        <g>
+            <rect x="10" y="80" width="40" height="40" fill="Orange"></rect>
+            <text x="60" y="100" fill="black">Above Average</text>
+        </g>
+        <g>
+            <rect x="10" y="120" width="40" height="40" fill="Crimson"></rect>
+            <text x="60" y="140" fill="black">Variance of +1 or more</text>
+        </g>
+    </svg>
+    </div>
+    <h1 class="my-font" style="color:#163D57;font-size: 1.1rem; margin-left:10rem; margin-right:10rem;margin-bottom:10rem;">In this data visualisation, we visualise the heat map technique. The data presented is the monthly variance from average earth temperature from 18th century to present. On hovering we can see the variance data of every month of these years.  </h1>
+</body>
+<script defer src='script.js'></script>
+
+</html>
